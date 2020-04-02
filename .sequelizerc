@@ -7,3 +7,4 @@ module.exports = {
   'seeders-path': resolve(__dirname, 'src', 'database', 'seeds'),
 
 }
+  
