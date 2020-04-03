@@ -4,9 +4,10 @@ module.exports = {
     node: true,
   },
   extends: [
-    'airbnb-base', 'prettier'
+    'airbnb-base',
+    'prettier'
   ],
-  plugins: ['prettier'],
+  plugins:['prettier'],
   globals: {
     Atomics: 'readonly',
     SharedArrayBuffer: 'readonly',
@@ -16,12 +17,12 @@ module.exports = {
     sourceType: 'module',
   },
   rules: {
-    // "prettier/prettier": "error",
+    "prettier/prettier": ["error", { "endOfLine":"auto"}],
     "class-methods-use-this": "off",
-    "no-param-reassing": "off",
-    "camelcase": "off",
+    "no-param-reassign":"off",
+    "camelcase":"off",
     "no-unused-vars": ["error", {"argsIgnorePattern": "next"}],
-
     "linebreak-style": 0,
+    // "global-require": 0,
   },
 };
